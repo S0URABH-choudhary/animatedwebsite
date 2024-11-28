@@ -1,0 +1,234 @@
+@font-face {
+    font-family: sans-nimbus;
+    src: url(./asscets/fonts/nimbus-sans-l_regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-nimbus;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    background-color: white;
+}
+
+/* nav-bar */
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+.nav-left {
+    display: flex;
+    gap: 30px;
+}
+
+nav #centre-tag{
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* hero section */
+.hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5vw;
+    padding: 0 10vw;
+}
+
+.sustain{
+    width: 10vw;
+    margin-bottom: 10vw;
+}
+.sustain p{
+    font-size: 12px;
+    opacity: .5;
+    margin: 10px 0;
+}
+
+.sustain #susimagewrapper{
+    width: 100%;
+    height: 15vw;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sustain #susimagewrapper img{
+    height: 140%;
+    width: 120%;
+    object-fit: cover;
+}
+
+.infusion{
+    position: relative;
+    min-height:38vw;
+    width: 36vw;
+}
+
+.infusion .headings h1{
+    letter-spacing: -.5vw;
+    line-height: .75;
+    font-size: 6vw;
+    font-weight: 400;
+}
+
+.textimegecontainer{
+    height: fit-content;
+    width: fit-content;
+}
+
+.infusion img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.infusion p{
+    font-size: 1.2vw;
+    letter-spacing: -.01vw;
+}
+
+.infusion .headings{
+    position: absolute;
+    top: -10%;
+    left: -20%;
+}
+
+.visit{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10vw;
+}
+
+#visit-circle{
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+}
+
+.visit h3, #visit-circle i{
+    color: #5e5e5e;
+}
+
+.visit h3{
+    font-weight: 400;
+}
+
+/* motive */
+.motive{
+    margin-top: 3vw;
+    display: flex;
+    padding: 3vw 10vw;
+    justify-content: space-between;
+    
+}
+
+.motive h3{
+    font-weight: 600;
+}
+
+.motive p{
+    width: 70%;
+    margin: 5vw 0;
+    font-size: 1.5vw;
+    line-height: 1.7;
+}
+.motive span{
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    margin: 0 6px;
+    margin-bottom: -8.5px;
+    border-radius: 100px;
+}
+#spone{
+    width: 80px;
+    background-image: url(./asscets/herbs.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+}
+#sptwo{
+    width: 70px;
+    background-image: url(./asscets/gift.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+}
+#spthree{
+    width: 80px;
+    background-image: url(./asscets/earth.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* health */
+.health{
+    margin-top: 3vw;
+    padding: 3vw 10vw;
+}
+.health>h3{
+    margin-bottom: 3vw;
+}
+.tea{
+    padding: 0 8vw;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.digestivehealth{
+    position: relative;
+    height:28vw;
+    width: 20vw;
+}
+.gingertea{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+.stressrelief{
+    height:38vw;
+    width: 25vw;
+}
+.chamomiletea{
+    height: 100%;
+    width: 100%;
+    background-color: green;
+}
+.info h3{
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+.info p{
+    width: 80%;
+}
