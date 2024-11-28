@@ -209,19 +209,19 @@ nav #centre-tag{
     height:28vw;
     width: 20vw;
 }
-.gingertea{
+.gingertea img{
     height: 100%;
     width: 100%;
-    background-color: red;
+    object-fit: cover;
+    object-position: center;
 }
 .stressrelief{
     height:38vw;
     width: 25vw;
 }
-.chamomiletea{
+.chamomiletea img{
     height: 100%;
     width: 100%;
-    background-color: green;
 }
 .info h3{
     font-size: 2.5vw;
