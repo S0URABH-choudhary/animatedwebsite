@@ -191,6 +191,8 @@ nav #centre-tag{
 
 /* health */
 .health{
+    width: 100%;
+    height: 100vh;
     margin-top: 3vw;
     padding: 3vw 10vw;
 }
@@ -231,4 +233,55 @@ nav #centre-tag{
 
 .info p{
     width: 80%;
+}
+/* future */
+.future{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vw;
+    height: 100vh;
+    width: 100%;
+}
+.future video{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-property: opacity;
+    transition: all ease;
+}
+
+
+
+#futuretext{
+    position: relative;
+    display: flex;
+    padding: 1vw 1vw;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 999;
+}
+
+#futuretext h3{
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+#futuretext button{
+    padding: .75vw 1.3vw;
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 500;
+    border-radius: 100px;
+    border: 1px solid gray;
+    background-color: white;
+    color: #5d5858;
 }
