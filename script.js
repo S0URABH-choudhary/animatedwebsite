@@ -1,26 +1,5 @@
-// adding locomogsap.registerPlugin(ScrollTrigger);
 
-const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".main"), // Replace with your scroll container
-    smooth: true,
-});
 
-locoScroll.on("scroll", ScrollTrigger.update);
-
-ScrollTrigger.scrollerProxy(".main", {
-    scrollTop(value) {
-        return arguments.length
-            ? locoScroll.scrollTo(value, 0, 0)
-            : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-    },
-    pinType: document.querySelector(".main").style.transform ? "transform" : "fixed",
-});
-
-// ensuring that scrolltrigger and gsap is loaded
-gsap.registerPlugin(ScrollTrigger);
 
 // animating nav section
 gsap.from(".nlink",{
@@ -40,14 +19,6 @@ gsap.from(".anim",{
     ease:Expo,
     duration:2,
 })
-Shery.textAnimate(".headings h1", {
-    style: 1,
-    y: 10,
-    delay: 0.1,
-    duration: 3,
-    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    multiplier: 0.1
-  });
 // animating motive section 
 
 gsap.from(".motive h3",{
@@ -57,7 +28,7 @@ gsap.from(".motive h3",{
     ease:Expo,
     scrollTrigger:{
         trigger:".motive h3",
-        scroller:".main",
+        scroller:"body",
         start:"top 80%"
     }
 })
@@ -68,7 +39,7 @@ gsap.from(".motive p",{
     ease:Expo,
     scrollTrigger:{
         trigger:".motive h3",
-        scroller:".main",
+        scroller:"body",
         start:"top 80%"
     }
 })
@@ -82,7 +53,7 @@ gsap.from(".health>h3",{
     ease:Power1,
     scrollTrigger:{
         trigger:".health>h3",
-        scroller:".main",
+        scroller:"body",
         start:"top 80%"
     }
 })
@@ -94,7 +65,7 @@ gsap.from(".sanim",{
     duration:2,   
     scrollTrigger:{
         trigger:".health>h3",
-        scroller:".main",
+        scroller:"body",
         start:"top 80%"
     }
 
@@ -107,17 +78,18 @@ let futurebtn = document.getElementById("futurebtn")
 let futurevid = document.getElementById("futurevid")
 
 function videoanimation () {
-    futurebtn.addEventListener("mouseenter",()=> {
+    futurebtn.addEventListener("mouseenter",function() {
         gsap.to(futurevid,{
             opacity:1
         })
     })
-    futurebtn.addEventListener("mouseleave",()=> {
+    futurebtn.addEventListener("mouseleave",function() {
         gsap.to(futurevid,{
             opacity:0
         }) 
     })
 }
 videoanimation()
+
 
 
