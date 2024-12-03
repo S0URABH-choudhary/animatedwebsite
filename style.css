@@ -155,6 +155,7 @@ nav #centre-tag{
 
 .motive h3{
     font-weight: 600;
+    will-change: transform;
 }
 
 .motive p{
@@ -162,6 +163,7 @@ nav #centre-tag{
     margin: 5vw 0;
     font-size: 1.5vw;
     line-height: 1.7;
+    will-change: transform;
 }
 .motive span{
     position: relative;
@@ -173,21 +175,21 @@ nav #centre-tag{
 }
 #spone{
     width: 80px;
-    background-image: url(./asscets/herbs.jpg);
+    background-image: url(./asscets/herbs.webp);
     background-size: cover;
     background-position: center;
     transform: rotate(180deg);
 }
 #sptwo{
     width: 70px;
-    background-image: url(./asscets/gift.jpg);
+    background-image: url(./asscets/gift.webp);
     background-size: cover;
     background-position: center;
     transform: rotate(180deg);
 }
 #spthree{
     width: 80px;
-    background-image: url(./asscets/earth.jpg);
+    background-image: url(./asscets/earth.webp);
     background-size: cover;
     background-position: center;
 }
@@ -208,6 +210,9 @@ nav #centre-tag{
     position: relative;
     display: flex;
     justify-content: space-between;
+}
+.sanim{
+    will-change: transform;
 }
 .digestivehealth{
     position: relative;

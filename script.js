@@ -19,6 +19,8 @@ ScrollTrigger.scrollerProxy(".main", {
     pinType: document.querySelector(".main").style.transform ? "transform" : "fixed",
 });
 
+// ensuring that scrolltrigger and gsap is loaded
+gsap.registerPlugin(ScrollTrigger);
 
 // animating nav section
 gsap.from(".nlink",{
@@ -52,22 +54,22 @@ gsap.from(".motive h3",{
     x:-30,
     opacity:0,
     duration:2,
-    ease:Power2,
+    ease:Expo,
     scrollTrigger:{
         trigger:".motive h3",
         scroller:".main",
-        start:"top 85%"
+        start:"top 80%"
     }
 })
 gsap.from(".motive p",{
     x:30,
     opacity:0,
     duration:2,
-    ease:Power2,
+    ease:Expo,
     scrollTrigger:{
         trigger:".motive h3",
         scroller:".main",
-        start:"top 85%"
+        start:"top 80%"
     }
 })
 
@@ -77,23 +79,23 @@ gsap.from(".health>h3",{
     x:-30,
     opacity:0,
     duration:2,
-    ease:Power2,
+    ease:Power1,
     scrollTrigger:{
         trigger:".health>h3",
         scroller:".main",
-        start:"top 85%"
+        start:"top 80%"
     }
 })
 
 gsap.from(".sanim",{
-    y:30,
+    y:40,
     opacity:0,
-    duration:2.5,
-    ease:Power2.easeout,    
+    ease:Expo, 
+    duration:2,   
     scrollTrigger:{
         trigger:".health>h3",
         scroller:".main",
-        start:"top 85%"
+        start:"top 80%"
     }
 
 
@@ -118,7 +120,4 @@ function videoanimation () {
 }
 videoanimation()
 
-//to recalculate scroll positions
-locoScroll.on("scroll", ScrollTrigger.update);
-ScrollTrigger.refresh();
 
