@@ -87,7 +87,7 @@ nav #centre-tag{
     width: 36vw;
 }
 
-.infusion .headings h1{
+.infusion #headings h1{
     letter-spacing: -.5vw;
     line-height: .75;
     font-size: 6vw;
@@ -112,7 +112,7 @@ nav #centre-tag{
     letter-spacing: -.01vw;
 }
 
-.infusion .headings{
+.infusion #headings{
     position: absolute;
     top: -10%;
     left: -20%;

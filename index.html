@@ -4,17 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Herbal Wonders</title>
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    <!-- Recommended -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="./asscets/herbal_icon_transparent.webp"
-      type="image/x-icon"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="./asscets/herbal_icon_transparent.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -48,7 +40,7 @@
           </div>
         </div>
         <div class="infusion anim">
-          <div class="headings">
+          <div id="headings">
             <h1>Infusion</h1>
             <h1>Chronicles.</h1>
           </div>
@@ -106,8 +98,6 @@
       <!-- banner -->
       <div class="banner">
         <div id="bannerimage">
-          <img id="i2" src="./asscets/white-flowers.webp" alt="image" />
-          <img id="i3" src="./asscets/blue-flowers.webp" alt="image" />
           <img id="i1" src="./asscets/banner1.webp" alt="image" />
         </div>
         <div id="bannertext">
@@ -132,15 +122,10 @@
           <button id="futurebtn">join us</button>
         </div>
       </div>
-    </div>
-    <!--  Gsap is needed for Basic Effects -->
+    </div> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Scroll Trigger is needed for Scroll Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-
-    <!-- Recommended -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script  src="script.js"></script>
   </body>
 </html>
