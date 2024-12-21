@@ -1,14 +1,16 @@
 const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true,
+    smoothMobile: true,
+    inertia: 0.8, // Reduce inertia for better performance
 });
+
 
 // animating nav section
 gsap.from(".nlink",{
     stagger: .2,
     y:10,
     duration:2,
-    ease:Power2,
     opacity:0,
 })
 
